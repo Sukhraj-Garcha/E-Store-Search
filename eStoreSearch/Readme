@@ -1,0 +1,151 @@
+************************************************
+
+-------------------------------------------------
+                General Problem
+-------------------------------------------------
+* this application attempts to simulate an online e-store
+* there are 2 types of products in these stores (books and electronics)
+* each product type is modelled by a class and each type is a child of the parent class Product
+* an e-store is also modelled by a class in order to allow for the creation of multiple e-stores (eg. amazon, e-bay)
+* the e-store will allow the user to add products to the store as well as search for products with options for different search fields
+
+-------------------------------------------------
+           Limitations
+-------------------------------------------------
+* the ID that the user enters for search is not tested to make sure it is valid (6 chars long, only digits)
+    - this causes no errors in the program, but it allows users to search for ID's that can't exist (eg. aasd) 
+* same as above with the year range the user searches for (no errors caused)
+
+-------------------------------------------------
+                User Guide
+-------------------------------------------------
+* the project was built with gradle
+* as a result, the project can be built by simply using the command "./gradlew build" or "gradle build" 
+    - this automatically tests the program too
+* the project can be tested (without building) by using the command "./gradlew test" or "gradle test"
+* finally, the project can be run by using the command "./gradlew run" or "gradle run"
+    - at this point, the user can simply follow the prompts given by the program 
+
+* user input   
+    - when choosing between add, search quit the user can: 
+         - type the full words 
+         - just type the first letter of each word (a, s, q)
+         - all possibilities are case insensitive
+    - when choosing between book or electronic for searching, the user can: 
+         - type the full words 
+         - just type the first letter of each word (b, e)
+         - all possibilities are case insensitive
+    - when prompted for a year range, the user can: 
+         - type a single year for all products in that year (eg. xxxx)
+         - type the year in the form of (xxxx-) to get products in that year and above 
+         - type the year in the form of (-xxxx) to get products in that year and below 
+         - type two years in the form of (xxxx-xxxx) to get products in that year range 
+    - all search fields can be left blank to print all products in the store
+
+* if the user does not wish to use the default text file that has been provided, they can run the program with 
+    ./gradlew run --args="filename" in order to use whichever file they specify
+    - an empty text file can be provided during the first run, the program will just not load anything and then 
+        will save the newly added data to it
+    - the user's text file must follow the same structure as the file "products.txt" or "testFile.txt"
+
+-------------------------------------------------
+                    Test Plan
+-------------------------------------------------
+* using junit, the following is how this application was tested for correctness: 
+
+App.java:
+    - tested checkMenuChoice method to make sure that user could enter reasonable values while unreasonable values were rejected
+        * cases 
+            - not a valid menu choice (empty string, only spaces, other)
+            - valid add choice (add or a --> case insensitive)
+            - valid search choice (search or s --> case insensitive)
+            - valid quit choice (quit or q --> case insensitive)
+    - tested checkType method the same way as above (ensures that the user chooses a valid product type when trying to add to the store)
+        * cases
+            - not a valid product choice (empty string, only spaces, other)
+            - valid book choice (book or b --> case insensitive)
+            - valid electronic choice (electronic or e --> case insensitive)
+    - tested checkYearRange method to make sure that error checking was done correctly 
+        * cases 
+            - input is not of the form xxxx, -xxxx, xxxx-, xxxx-xxxx, or blank
+            - input of the form xxxx: 
+                value is not numerical
+            - input of the form xxxx- or -xxxx
+                the year portion is not numerical, or the first or last character is not '-'
+            - input is of the form xxxx-xxxx
+                either of the years are not numerical, or second year is smaller than first year
+            - all valid choices
+
+Product.java
+    - mutators and accessors tested in child classes so no need to test here
+    - tested equals method for proper idenification of two equal Products
+    - tested containsWord to ensure it correctly identified if a book's description contains a specific word
+        * cases
+            - does not contain word
+            - contains word
+            - contains part of a word (eg. description has programming and user searches for program --> shouldn't match) 
+
+Book.java
+    - tested getProductID to make sure accessors were inherited correctly
+    - tested setAuthors to make sure mutators are functioning properly
+    - tested toString to make sure the formatting was correct 
+    - tested equals to make sure it correctly detected two equal Books
+    - tested matchID to make sure it correctly identified two equal ID's 
+        * cases
+            - same ID 
+            - different ID
+    - tested match year to make sure that a Book correctly identifies if it falls within the given range 
+        * cases
+            - one year (xxxx) 
+            - within year and above (xxxx-)
+            - within year and below (-xxxx)
+            - within year range (xxxx-xxxx)
+            - different specific year (xxxx)
+            - not within year range (xxxx-xxxx)
+    - tested checkAttributes to make sure that it properly determines if ID, description, and year are valid 
+        * cases
+            - valid ID, description, and year
+            - ID not 6 chars 
+            - ID doesn't only contain digits
+            - year not in range 1000-9999
+            - description is empty
+
+Electronics.java
+    - majority of the methods in this class are the same as the Book class so there was no need to rewrite tests for these methods 
+    - however, some standard class specific methods (accessers, mutators, etc.) were tested for correctness
+    - tested getProductID to make sure accessors are functioning properly 
+    - tested setMaker to make sure mutators are functioning properly
+    - tested toString to make sure the formatting was correct 
+    - tested equals to make sure it correctly detected two equal Electronics
+
+EStoreSearch.java
+    - tested addBook to make sure books were correctly added to the books lists
+        * cases
+            - add book 
+            - add book with duplicate ID 
+    - tested addElectronic to make sure electronics were correctly added to the electronics lists
+         * cases
+            - add electronic
+            - add electronic with duplicate ID
+    - tested all search methods to make sure they correctly found products *[updated to test searching with HashMap]*
+        * cases
+            - search by product ID only 
+            - search by key words only (case insensitive)
+            - search by year range only 
+            - search by ID and key words 
+            - search by ID and year range 
+            - search by key words and year range (case insensitive)
+            - search by all requests
+            - search for product that doesn't exist using all of the above methods
+    - tested reading from a file
+    - tested writing to a file
+    - tested the creation of the HashMap
+    - tested the updating of the HashMap
+
+-------------------------------------------------
+            Possible Improvements
+-------------------------------------------------
+* fix above limitations
+* change the functionality of add so that incorrect input is detected right away instead of after all attributes are entered
+* change reading from the file so that it can handle the case when there are missing attributes
+* change writing to the file so that any blank/default attributes (eg "maker = N\A") are not written to the file

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="eStoreSearch.AppTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-11-19T02:41:35" hostname="Craj-PC" time="0.008">
+  <properties/>
+  <testcase name="testCheckYearRange" classname="eStoreSearch.AppTest" time="0.006"/>
+  <testcase name="testCheckMenuChoice" classname="eStoreSearch.AppTest" time="0.0"/>
+  <testcase name="testAppHasAGreeting" classname="eStoreSearch.AppTest" time="0.0"/>
+  <testcase name="testCheckType" classname="eStoreSearch.AppTest" time="0.0"/>
+  <system-out><![CDATA[ERROR: please enter a numerical value for year
+ERROR: invalid input for year range
+ERROR: please ensure input is of the form -xxxx or xxxx-
+ERROR: please ensure input is of the form -xxxx or xxxx-
+ERROR: please ensure input is of the form -xxxx or xxxx-
+ERROR: please ensure input is of the form -xxxx or xxxx-
+ERROR: please enter a numerical value for both years
+ERROR: please enter a numerical value for both years
+ERROR: end year is smaller than start year
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

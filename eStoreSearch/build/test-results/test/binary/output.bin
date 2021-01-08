@@ -1,0 +1,134 @@
+/ERROR: please enter a numerical value for year
+$ERROR: invalid input for year range
+9ERROR: please ensure input is of the form -xxxx or xxxx-
+9ERROR: please ensure input is of the form -xxxx or xxxx-
+9ERROR: please ensure input is of the form -xxxx or xxxx-
+9ERROR: please ensure input is of the form -xxxx or xxxx-
+5ERROR: please enter a numerical value for both years
+5ERROR: please enter a numerical value for both years
++ERROR: end year is smaller than start year
+Book succesfully added to list
+DERROR: product with the ID 001234 already exists. Product not added
+Book succesfully added to list
+DERROR: product with the ID 710017 already exists. Product not added
+	Book succesfully added to list
+	Book succesfully added to list
+	Book succesfully added to list
+	Book succesfully added to list
+	Product found:
+	Product ID: 000432
+	"Description: 68000 Microprocessor
+	Year: 2015
+	Price: 0.0
+	Author(s): N/A
+	Publisher: N/A
+	
+
+DERROR: product with the ID 000123 already exists. Product not added
+
+DERROR: product with the ID 000432 already exists. Product not added
+
+DERROR: product with the ID 123456 already exists. Product not added
+
+DERROR: product with the ID 667812 already exists. Product not added
+
+Book succesfully added to list
+DERROR: product with the ID 000123 already exists. Product not added
+DERROR: product with the ID 000432 already exists. Product not added
+DERROR: product with the ID 123456 already exists. Product not added
+DERROR: product with the ID 667812 already exists. Product not added
+Product Found:
+Product ID: 000432
+"Description: 68000 Microprocessor
+Year: 2015
+Price: 0.0
+Author(s): N/A
+Publisher: N/A
+
+DERROR: product with the ID 000123 already exists. Product not added
+DERROR: product with the ID 000432 already exists. Product not added
+DERROR: product with the ID 123456 already exists. Product not added
+DERROR: product with the ID 667812 already exists. Product not added
+DERROR: product with the ID 000123 already exists. Product not added
+DERROR: product with the ID 000432 already exists. Product not added
+DERROR: product with the ID 123456 already exists. Product not added
+DERROR: product with the ID 667812 already exists. Product not added
+Product Found:
+Product ID: 123456
+Description: Samsung Galaxy S9
+Year: 2019
+Price: 0.0
+Maker: N/A
+
+DERROR: product with the ID 000123 already exists. Product not added
+DERROR: product with the ID 000432 already exists. Product not added
+DERROR: product with the ID 123456 already exists. Product not added
+DERROR: product with the ID 667812 already exists. Product not added
+'Data succesfully saved to testFile.txt
+)Data successfully read from testFile.txt
+
+Product found: 
+Product ID: 001234
+%Description: Testing add electronics
+Year: 2009
+Price: 0.0
+Maker: N/A
+
+Product found: 
+Product ID: 000432
+"Description: 68000 Microprocessor
+Year: 2015
+Price: 0.0
+Author(s): N/A
+Publisher: N/A
+
+DERROR: product with the ID 000123 already exists. Product not added
+DERROR: product with the ID 000432 already exists. Product not added
+DERROR: product with the ID 123456 already exists. Product not added
+DERROR: product with the ID 667812 already exists. Product not added
+Product found:
+Product ID: 123456
+Description: Samsung Galaxy S9
+Year: 2019
+Price: 0.0
+Maker: N/A
+
+DERROR: product with the ID 000123 already exists. Product not added
+DERROR: product with the ID 000432 already exists. Product not added
+DERROR: product with the ID 123456 already exists. Product not added
+DERROR: product with the ID 667812 already exists. Product not added
+Product Found:
+Product ID: 667812
+Description: Xbox One
+Year: 2017
+Price: 0.0
+Maker: N/A
+
+DERROR: product with the ID 000123 already exists. Product not added
+DERROR: product with the ID 000432 already exists. Product not added
+DERROR: product with the ID 123456 already exists. Product not added
+DERROR: product with the ID 667812 already exists. Product not added
+Product Found:
+Product ID: 000123
+Description: The Lost Hero
+Year: 2010
+Price: 0.0
+Author(s): N/A
+Publisher: N/A
+
+DERROR: product with the ID 000123 already exists. Product not added
+DERROR: product with the ID 000432 already exists. Product not added
+DERROR: product with the ID 123456 already exists. Product not added
+DERROR: product with the ID 667812 already exists. Product not added
+Product found: 
+Product ID: 000123
+Description: The Lost Hero
+Year: 2010
+Price: 0.0
+Author(s): N/A
+Publisher: N/A
+
+#ERROR: product ID must be 6 digits
++ERROR: product ID must contain only digits
++ERROR: year must be in the range 1000-9999
++ERROR: year must be in the range 1000-9999

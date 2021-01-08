@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="eStoreSearch.EStoreSearchTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-11-19T02:41:35" hostname="Craj-PC" time="0.118">
+  <properties/>
+  <testcase name="testAddElectronic" classname="eStoreSearch.EStoreSearchTest" time="0.009"/>
+  <testcase name="testAddBook" classname="eStoreSearch.EStoreSearchTest" time="0.002"/>
+  <testcase name="testSearchYear" classname="eStoreSearch.EStoreSearchTest" time="0.033"/>
+  <testcase name="testUpdatingMap" classname="eStoreSearch.EStoreSearchTest" time="0.006"/>
+  <testcase name="testSearchIDAndKeyWords" classname="eStoreSearch.EStoreSearchTest" time="0.006"/>
+  <testcase name="testCreatingHashMap" classname="eStoreSearch.EStoreSearchTest" time="0.003"/>
+  <testcase name="testSearchAllRequests" classname="eStoreSearch.EStoreSearchTest" time="0.014"/>
+  <testcase name="testReadAndWriteToFile" classname="eStoreSearch.EStoreSearchTest" time="0.028"/>
+  <testcase name="testSearchIDAndYear" classname="eStoreSearch.EStoreSearchTest" time="0.001"/>
+  <testcase name="testSearchWordsAndYear" classname="eStoreSearch.EStoreSearchTest" time="0.008"/>
+  <testcase name="testSearchKeyWords" classname="eStoreSearch.EStoreSearchTest" time="0.005"/>
+  <testcase name="testSearchID" classname="eStoreSearch.EStoreSearchTest" time="0.002"/>
+  <system-out><![CDATA[Book succesfully added to list
+ERROR: product with the ID 001234 already exists. Product not added
+Book succesfully added to list
+ERROR: product with the ID 710017 already exists. Product not added
+Book succesfully added to list
+Book succesfully added to list
+Book succesfully added to list
+Book succesfully added to list
+Product found:
+Product ID: 000432
+Description: 68000 Microprocessor
+Year: 2015
+Price: 0.0
+Author(s): N/A
+Publisher: N/A
+
+ERROR: product with the ID 000123 already exists. Product not added
+ERROR: product with the ID 000432 already exists. Product not added
+ERROR: product with the ID 123456 already exists. Product not added
+ERROR: product with the ID 667812 already exists. Product not added
+Book succesfully added to list
+ERROR: product with the ID 000123 already exists. Product not added
+ERROR: product with the ID 000432 already exists. Product not added
+ERROR: product with the ID 123456 already exists. Product not added
+ERROR: product with the ID 667812 already exists. Product not added
+Product Found:
+Product ID: 000432
+Description: 68000 Microprocessor
+Year: 2015
+Price: 0.0
+Author(s): N/A
+Publisher: N/A
+
+ERROR: product with the ID 000123 already exists. Product not added
+ERROR: product with the ID 000432 already exists. Product not added
+ERROR: product with the ID 123456 already exists. Product not added
+ERROR: product with the ID 667812 already exists. Product not added
+ERROR: product with the ID 000123 already exists. Product not added
+ERROR: product with the ID 000432 already exists. Product not added
+ERROR: product with the ID 123456 already exists. Product not added
+ERROR: product with the ID 667812 already exists. Product not added
+Product Found:
+Product ID: 123456
+Description: Samsung Galaxy S9
+Year: 2019
+Price: 0.0
+Maker: N/A
+
+ERROR: product with the ID 000123 already exists. Product not added
+ERROR: product with the ID 000432 already exists. Product not added
+ERROR: product with the ID 123456 already exists. Product not added
+ERROR: product with the ID 667812 already exists. Product not added
+Data succesfully saved to testFile.txt
+Data successfully read from testFile.txt
+
+Product found: 
+Product ID: 001234
+Description: Testing add electronics
+Year: 2009
+Price: 0.0
+Maker: N/A
+
+Product found: 
+Product ID: 000432
+Description: 68000 Microprocessor
+Year: 2015
+Price: 0.0
+Author(s): N/A
+Publisher: N/A
+
+ERROR: product with the ID 000123 already exists. Product not added
+ERROR: product with the ID 000432 already exists. Product not added
+ERROR: product with the ID 123456 already exists. Product not added
+ERROR: product with the ID 667812 already exists. Product not added
+Product found:
+Product ID: 123456
+Description: Samsung Galaxy S9
+Year: 2019
+Price: 0.0
+Maker: N/A
+
+ERROR: product with the ID 000123 already exists. Product not added
+ERROR: product with the ID 000432 already exists. Product not added
+ERROR: product with the ID 123456 already exists. Product not added
+ERROR: product with the ID 667812 already exists. Product not added
+Product Found:
+Product ID: 667812
+Description: Xbox One
+Year: 2017
+Price: 0.0
+Maker: N/A
+
+ERROR: product with the ID 000123 already exists. Product not added
+ERROR: product with the ID 000432 already exists. Product not added
+ERROR: product with the ID 123456 already exists. Product not added
+ERROR: product with the ID 667812 already exists. Product not added
+Product Found:
+Product ID: 000123
+Description: The Lost Hero
+Year: 2010
+Price: 0.0
+Author(s): N/A
+Publisher: N/A
+
+ERROR: product with the ID 000123 already exists. Product not added
+ERROR: product with the ID 000432 already exists. Product not added
+ERROR: product with the ID 123456 already exists. Product not added
+ERROR: product with the ID 667812 already exists. Product not added
+Product found: 
+Product ID: 000123
+Description: The Lost Hero
+Year: 2010
+Price: 0.0
+Author(s): N/A
+Publisher: N/A
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

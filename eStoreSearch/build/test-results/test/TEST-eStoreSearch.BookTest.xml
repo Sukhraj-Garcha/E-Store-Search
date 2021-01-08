@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="eStoreSearch.BookTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-11-19T02:41:35" hostname="Craj-PC" time="0.005">
+  <properties/>
+  <testcase name="testToString" classname="eStoreSearch.BookTest" time="0.002"/>
+  <testcase name="testGetProductID" classname="eStoreSearch.BookTest" time="0.0"/>
+  <testcase name="testMatchID" classname="eStoreSearch.BookTest" time="0.0"/>
+  <testcase name="testMatchYear" classname="eStoreSearch.BookTest" time="0.001"/>
+  <testcase name="testEquals" classname="eStoreSearch.BookTest" time="0.0"/>
+  <testcase name="testCheckAttributes" classname="eStoreSearch.BookTest" time="0.001"/>
+  <testcase name="testSetAuthors" classname="eStoreSearch.BookTest" time="0.0"/>
+  <testcase name="testInheritance" classname="eStoreSearch.BookTest" time="0.0"/>
+  <system-out><![CDATA[ERROR: product ID must be 6 digits
+ERROR: product ID must contain only digits
+ERROR: year must be in the range 1000-9999
+ERROR: year must be in the range 1000-9999
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
